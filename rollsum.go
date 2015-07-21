@@ -14,7 +14,7 @@ type Rollsum struct {
 }
 
 func (rs *Rollsum) Count() uint64 {
-	return rs.cout
+	return rs.count
 }
 
 func (rs *Rollsum) S1() uint64 {
