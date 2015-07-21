@@ -13,6 +13,18 @@ type Rollsum struct {
 	s2    uint64 /* s2 part of sum */
 }
 
+func (rs *Rollsum) Count() uint64 {
+	return rs.cout
+}
+
+func (rs *Rollsum) S1() uint64 {
+	return rs.s1
+}
+
+func (rs *Rollsum) S2() uint64 {
+	return rs.s2
+}
+
 func (rs *Rollsum) Init() {
 	rs.count = 0
 	rs.s1 = 0
